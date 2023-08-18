@@ -1,0 +1,85 @@
+<!--Marina De Castro-->
+<!--Due Date: 8/20-->
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="https://www.pngkit.com/png/full/889-8892363_kpop-sticker-kawaii-pixel-art-transparent.png">
+        <title>Index</title>
+    </head>
+<style>
+        body{
+            background-color:rgb(166, 227, 166);
+            text-align: center;
+            background-image: url(https://wallpaperaccess.com/full/84248.png);
+            background-size: contain cover;
+        }
+        /*Meme*/
+        #memeimage{
+            position: absolute;
+            margin-left: -110px;
+        }
+        /*Buttons for img*/
+        .btn{
+            background-color: rgb(74, 13, 105);
+            color: azure;
+            margin-top: 30px;
+        }
+        /*Navigation*/
+        a{
+        text-align: center;
+        font-family: 'Abril Fatface', cursive;
+        color: rgb(165, 31, 255);
+        text-decoration: none;
+        text-shadow: 2px 2px 3px black;
+    }
+    a.active{
+        color: cadetblue;
+    }
+    a:hover{
+        color: rgb(248, 175, 215);
+    }
+    /*Footer*/
+    footer{
+        margin-top: 300px;
+        text-align: right;
+    }
+</style>
+<body>
+<!--Navigation-->
+    <h2>
+        <nav>
+            <a class="active" href="Index 4.1.html">-Home-</a>
+            <a href="1 Boards.html">-Boards-</a>
+            <a href="2 game.html">-Game-</a>
+            <a href="0 Incorporate Audio.html">-Palindrome-</a>
+            <a href="4 User Input Val.html">-User Validator-</a>
+            <a href="5 Table.html">-Table-</a>
+        </nav>
+    </h2>
+<!--Desc.-->
+<p style="color: white;">When the "Start" button is pressed, the image should move up and down. To stop it from moving, press the "Stop" button.</p>
+<!--Buttons-->
+        <button class="btn" onclick="start(document.getElementById('memeimage'))">Start</button>
+        <button class="btn"  onclick="stop(document.getElementById('memeimage'))">Stop</button>
+        <br>
+        <br>
+<!--Image--><img id="memeimage" src="memeimage.jpg">
+<!--Footer-->
+        <footer>
+            Marina De Castro
+            <br>
+            University of Advancing Technology
+            <br>
+            2625 W Baseline Rd
+            <br>
+            Tempe, AZ 85283
+        </footer>
+
+    </body>
+    <script src="Event Driven Prog. 4.1.js"></script>
+</html>

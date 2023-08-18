@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://www.pngkit.com/png/full/889-8892363_kpop-sticker-kawaii-pixel-art-transparent.png">
+    <title>Mars Casino</title>
+</head>
+<style>
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        background-image:url(https://i.pinimg.com/1200x/df/b1/9f/dfb19fd856363981b08905383fdc929d.jpg);
+        background-size: cover;
+    }
+/*Desc.*/
+    p{
+        margin-left: 300px;
+        margin-right: 300px;
+        color:rgb(134, 134, 134);
+    }
+/*Buttons:Start, hit, stand*/
+    button{
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 0, 0);
+        font-size: 15px;
+
+    }
+    button:hover{
+        background-color: crimson;
+        color: black;
+    }
+    /*Desc., cards, titles*/
+    .all{
+        color: red;
+    }
+    /*Navigation*/
+    a{
+        text-align: center;
+        font-family: 'Abril Fatface', cursive;
+        color: rgb(255, 0, 43);
+        text-decoration: none;
+        text-shadow: 2px 2px 3px black;
+    }
+    a.active{
+        color: cadetblue;
+    }
+    a:hover{
+        color: rgb(248, 175, 215);
+    }
+</style>
+<body>
+<!--Navigation-->
+    <h2>
+        <nav>
+            <a href="Index 4.1.html">-Home-</a>
+            <a href="1 Boards.html">-Boards-</a>
+            <a class="active" href="2 game.html">-Game-</a>
+            <a href="0 Incorporate Audio.html">-Palindrome-</a>
+            <a href="4 User Input Val.html">-User Validator-</a>
+            <a href="5 Table.html">-Table-</a>
+        </nav>
+    </h2>
+
+<!--Rules/Directions-->
+    <div class="all">
+    <h1>Fast Paced Black Jack</h1>
+    <h3>RULES/Directions:</h3>
+    <p>Press "Start Game" to have both you and the Dealer start with two cards. 
+        You can only "Hit" or "Stand" once, so gamble your win. If Dealer has 17, over 21, or you "stand" and you have a higher total, than "You win". 
+        If You have 21 or BlackJack, <span style="color: red;">BUT</span> the Dealer has BlackJack, than you lose. 
+        If both you and the Dealer have the same total, then you "draw". GOOD LUCK!</p>
+    <p>To Restart Game, refresh page.</p>
+    <!--Starts game-->
+    <button onclick="displaynum1()">Start Game</button>
+    <!--Adds another card-->
+    <button onclick="displaynum2()">Hit</button>
+    <!--Lets you Stand on a win or loss-->
+    <button onclick="Stand()">Stand</button>
+
+<!--Cards and Total for dealer and you-->
+    <h3>Dealer   <span>VS.</span>   You</h3>
+    <p style="color: rgb(81, 217, 255);"> First Card: <span id="first player" style="color: white;"></span> First Card: <span id="second player" style="color: white;" ></span></p>
+    <p style="color: rgb(81, 145, 255);">Second Card: <span id="first roll" style="color: white;"></span> Second Card: <span id="second roll" style="color: white;"></span></p>
+    <p style="color: rgb(242, 141, 255);">Third Card: <span id="third roll1" style="color: white;"></span> Third Card: <span id="third roll2" style="color: white;"></span></p>
+    <p style="color: rgb(255, 81, 177);">Total: <span id="total1" style="color: white;"></span> Total: <span id="total2" style="color: white;"></span></p>
+</div>
+</body>
+<script src="2 game.js"></script>
+</html>

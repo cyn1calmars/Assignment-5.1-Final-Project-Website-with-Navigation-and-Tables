@@ -1,0 +1,71 @@
+<!--Marina De Castro-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://www.pngkit.com/png/full/889-8892363_kpop-sticker-kawaii-pixel-art-transparent.png">
+    <title>Palindrome Checker</title>
+</head>
+<style>
+    body{
+        background-image: url("https://img.freepik.com/free-vector/paper-style-white-monochrome-background_23-2149023491.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+/*Navigation*/
+    a{
+        text-align: center;
+        font-family: 'Abril Fatface', cursive;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        text-shadow: 2px 2px 3px rgb(255, 255, 255);
+    }
+    a.active{
+        color: cadetblue;
+    }
+    a:hover{
+        color: rgb(248, 175, 215);
+    }
+</style>
+<body>
+<!--Navigation-->
+    <h2>
+        <nav>
+            <a href="Index 4.1.html">-Home-</a>
+            <a href="1 Boards.html">-Boards-</a>
+            <a href="2 game.html">-Game-</a>
+            <a class="active" href="0 Incorporate Audio.html">-Palindrome-</a>
+            <a href="4 User Input Val.html">-User Validator-</a>
+            <a href="5 Table.html">-Table-</a>
+        </nav>
+    </h2>
+
+
+    <!--Audio for background, shows controls for pausing and starting-->
+    <audio controls>
+        <source src="lofi-chill-medium-version-159456.mp3" type="audio/mp3">
+    </audio>
+<!--Description-->
+    <h1>Enter a Palindrome</h1>
+    <p>A Palindrome is a word or phrase that is the same backwords and forwards.</p>
+    <p>Hint: Entering certain words may have a picture appear!</p>
+    <!--User enters the Palindrome and submits it to a function-->
+        <input id="palindrome" type="text">
+        <button id="submit" onclick="checkPalindrome()">Submit</button>
+        <br>
+    <!--Images that will show when a certain if else statement is called from the input-->
+    <div id="images">
+        <img id="racecar" src="">
+        <img id="tacocat" src="">
+        <img id="cheers" src="">
+        <img id="no" src="">
+    </div>
+
+</body>
+<script src="0 Incorporate Audio.js"></script>
+</html>

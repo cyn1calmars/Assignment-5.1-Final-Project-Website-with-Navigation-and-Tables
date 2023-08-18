@@ -1,0 +1,106 @@
+<!--Marina De Castro-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://www.pngkit.com/png/full/889-8892363_kpop-sticker-kawaii-pixel-art-transparent.png">
+    <title>User Input Validator</title>
+</head>
+<style>
+    body{
+        text-align:center;
+        background-image: url(https://static.vecteezy.com/system/resources/previews/013/784/235/original/aesthetic-cute-abstract-purple-and-white-distorted-checkers-checkerboard-wallpaper-illustration-perfect-for-backdrop-wallpaper-background-banner-cover-vector.jpg);
+        background-repeat: no-repeat;
+        background-size: cover contain;
+    }
+    /*Label for first and last name, and zip code*/
+    label{
+        text-decoration:underline 2px white;
+        color: rgb(48, 3, 52);
+    }
+    /*Header*/
+    h2{
+        color: rgb(30, 1, 31);
+        text-decoration: underline 2px white;
+        
+    }
+    /*first and last name, and zip code that is shown*/
+    p{
+        color: rgb(46, 0, 67);
+        font-size: 20px;
+    }
+    /*Image*/
+    #image1{
+        height: 350px;
+        width: 350px;
+        float: right;
+        margin-top: -50px;
+    }
+    /*Information*/
+    .form{
+        background-color: rgba(235, 161, 255, 0.751);
+        padding-bottom: 20px;
+        margin-left: 450px;
+        margin-right: 450px;
+        outline: solid black;
+    }
+    /*Navigation*/
+    a, .nav{
+        text-align: center;
+        font-family: 'Abril Fatface', cursive;
+        color: rgb(154, 0, 225);
+        text-decoration: none;
+        text-shadow: 2px 2px 3px black;
+    }
+    a.active{
+        color: cadetblue;
+    }
+    a:hover{
+        color: rgb(248, 175, 215);
+    }
+</style>
+<body>
+    <!--Navigation-->
+    <h2 class="nav">
+        <nav>
+            <a href="Index 4.1.html">-Home-</a>
+            <a href="1 Boards.html">-Boards-</a>
+            <a href="2 game.html">-Game-</a>
+            <a href="0 Incorporate Audio.html">-Palindrome-</a>
+            <a class="active" href="4 User Input Val.html">-User Validator-</a>
+            <a href="5 Table.html">-Table-</a>
+        </nav>
+    </h2>
+
+
+<!--Information-->
+    <div class="form">
+    <h2>Enter your Information</h2>
+    <p id="f&lname"></p>
+    <p id="zipcode"></p>
+
+<!--Input First Name-->
+        <label id="fname_label">First Name:</label>&nbsp;&nbsp;<input id="fname_input" type="text" >
+        <br>
+        <br>
+<!--Input Last Name-->
+        <label id="lname_label">Last Name:</label>&nbsp;&nbsp;<input id="lname_input" type="text">
+        <br>
+        <br>
+<!--Input Zip Code-->
+        <label id="zip_label">Zip Code:</label>&nbsp;&nbsp;<input id="zip_input" type="text">
+        <br>
+        <br>
+<!--Submit the inputs to check for validation-->
+        <button onclick="strcheck()" style="text-align: center;">Submit</button>
+        <br></div>
+        
+<!--Image-->
+        <img id="image1" src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/2/2c/ThinkingHelpy.png/revision/latest?cb=20190327202335" >
+</body>
+<script src="4 User Input Val.js"></script>
+</html>
